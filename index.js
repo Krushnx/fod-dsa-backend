@@ -27,6 +27,7 @@ app.use(cookieparser());
 
 
 app.get('/', (req, res) => {res.sendStatus(200)})
+app.get('/test', (req, res) => {res.sendStatus(201)})
 
 
 // const hotelRoutes = require('./routes/hotels');
