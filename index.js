@@ -32,11 +32,11 @@ app.get('/', (req, res) => {res.sendStatus(200)})
 // const hotelRoutes = require('./routes/hotels');
 const challengeRoute = require('./routes/challengeRoute');
 const userRoutes = require('./routes/userRoutes')
-const paymentsRouter = require('./routes/payment'); // Import the payments routes
+// const paymentsRouter = require('./routes/payment'); // Import the payments routes
 // app.use('/hotels' , hotelRoutes);
 app.use('/auth' , userRoutes);
 app.use('/challenge' , challengeRoute);
-app.use('/payments', paymentsRouter);
+// app.use('/payments', paymentsRouter);
 
 app.listen(PORT, ()=>{
     console.log(`App listed on port http://localhost:8000`);
