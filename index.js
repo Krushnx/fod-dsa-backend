@@ -8,7 +8,7 @@ const cookieparser = require('cookie-parser')
 mongoose.connect(process.env.DB);
 const app = express();
 const corsOptions ={
-    origin:['http://localhost:3000' ,'https://fod-dsa-frontend.vercel.app' , 'https://fod-dsa-frontend-4lb2peucs-krushnxs-projects.vercel.app/' , 'https://fod-do-dsa.web.app'], 
+    origin:['http://localhost:3000' ,'https://fod-dsa-frontend.vercel.app' , 'https://fod-dsa-frontend-4lb2peucs-krushnxs-projects.vercel.app/' , 'https://fod-do-dsa.web.app' , 'http://192.168.158.154:3000'], 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200,
     
